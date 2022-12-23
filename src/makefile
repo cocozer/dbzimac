@@ -1,6 +1,5 @@
 # makefile de base correspondant a l'exercice 2, TP8
 
-
 main.exe: main.o SDL2_gfxPrimitives.o application_ui.o
 		g++ -o main.exe main.o SDL2_gfxPrimitives.o application_ui.o 
 
@@ -10,8 +9,8 @@ main.o: main.cpp application_ui.h SDL2_gfxPrimitives.h
 application_ui.o: application_ui.cpp application_ui.h
 	     g++ -o application_ui.o -c application_ui.cpp -Wall
 
-SDL2_gfxPrimitives.o: SDL2_gfxPrimitives.cpp SDL2_gfxPrimitives.h
-		 g++ -o SDL2_gfxPrimitives.o -c SDL2_gfxPrimitives.cpp -Wall
+SDL2_gfxPrimitives.o: SDL2_gfxPrimitives.c SDL2_gfxPrimitives.h
+		 g++ -o SDL2_gfxPrimitives.o -c SDL2_gfxPrimitives.c -Wall
 
 clean:
 	rm *.o
