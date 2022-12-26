@@ -6,11 +6,17 @@ void draw(SDL_Renderer* renderer)
 {
     /* Remplissez cette fonction pour faire l'affichage du jeu */
     
-    /* 
     filledEllipseRGBA(
-        renderer, ... ?
+        renderer,
+        50,
+        600,
+        50,
+        50,
+        60,
+        150,
+        133,
+        72
     ); 
-    */
    
 }
 
