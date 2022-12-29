@@ -1,7 +1,6 @@
 #include "application_ui.h"
 #include "SDL2_gfxPrimitives.h"
 
-
 void draw(SDL_Renderer* renderer)
 {
     /* Remplissez cette fonction pour faire l'affichage du jeu */
@@ -25,8 +24,14 @@ bool handleEvent()
     /* Remplissez cette fonction pour gérer les inputs utilisateurs */
     SDL_Event e; 
     while (SDL_PollEvent(&e)){ 
-        if (e.type == SDL_QUIT) 
-            return false; 
+        switch (e.type) {
+            case SDL_MouseButtonEvent:
+                 printf("salut");
+                break;
+
+        }
+            
+            return false;
     }
     return true;
 }
