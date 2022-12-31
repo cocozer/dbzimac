@@ -25,19 +25,17 @@ bool handleEvent()
     SDL_Event e; 
     while (SDL_PollEvent(&e)){ 
         switch (e.type) {
-            case SDL_MouseButtonEvent:
-                 printf("salut");
+            case SDL_MOUSEMOTION:
+                printf("salut");
                 break;
-
         }
-            
             return false;
     }
     return true;
 }
 
-
-int main(int argc, char** argv) {
+// int main(int argc, char** argv)
+int main() {
     SDL_Window* gWindow;
     SDL_Renderer* renderer;
     bool is_running = true; 
